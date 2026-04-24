@@ -51,18 +51,7 @@ class DataTransformation:
                 ]
             )
 
-            # cat_pipeline=Pipeline(
-            #     steps=[
-            #         ("imputer",SimpleImputer(strategy="most_frequent")),
-            #         # ("one_hot_encoder",OneHotEncoder()),
-            #         # ("scaler",StandardScaler())
-            #         # Recommended Fix: Tell OneHotEncoder to return a normal array
-            #         ('one_hot_encoder', OneHotEncoder(sparse_output=False), categorical_columns),
-
-            #         # OR Fix: Tell StandardScaler not to center the data
-            #         ('scaler', StandardScaler(with_mean=False), numerical_columns)
-            #     ]
-
+           
             
             logging.info("Numerical columns:{categorical_columns}")
             logging.info("Categorical columns: {numerical_columns}")
